@@ -1,0 +1,8 @@
+[package]
+name = "ross_lean"
+version = "0.1"
+lean_version = "leanprover-community/lean:3.44.1"
+path = "src"
+
+[dependencies]
+mathlib = {git = "https://github.com/leanprover-community/mathlib", rev = "89a80e67dd7f94553fd60f17d27344ff3c184cd4"}
