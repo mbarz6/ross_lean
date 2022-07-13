@@ -34,3 +34,19 @@ begin
   rw ha_h, 
   rw hb_h,
 end
+
+theorem s1p7 (a b c : ℤ) (ha : divides a b) (hb : divides b c) : divides a c :=
+begin
+  rw divides,
+  cases ha with x,
+  cases hb with y,
+  use x*y,
+  rw <-mul_assoc,
+  rw ha_h,
+  rw hb_h,
+end
+
+theorem s1p8 (a : ℤ) : a * 0 = 0 :=
+begin
+  sorry
+end
